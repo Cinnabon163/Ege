@@ -1,5 +1,5 @@
 numbers = []
-with open ("udata/17.txt") as f:
+with open ("data/17.txt") as f:
     for line in f:
         numbers.append(int(line))
 
@@ -13,7 +13,7 @@ for num in numbers:
     if num >= 0:
         positives += num
     if num < 0:
-        negatives += num
+        negatives += -num
 
 result = mod(positives - negatives)
 
