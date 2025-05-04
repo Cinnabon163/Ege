@@ -1,5 +1,5 @@
 numbers = []
-with open ("data/17.txt") as f:
+with open ("data/17.txt", "r") as f:
     for line in f:
         numbers.append(int(line))
 
