@@ -39,6 +39,8 @@ def get_triple_status(current, prev, prev_prev, max36):
     is_count_valid = count >= 2
     is_total_valid = total <= max36
     is_valid = is_count_valid and is_total_valid
+    if total == -175325:
+        print(current, prev, prev_prev)
     return (is_valid, total)
 
 triple_good = (str(35), str(-36), str(36))
