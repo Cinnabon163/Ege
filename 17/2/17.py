@@ -7,8 +7,8 @@ def is_even(str_number):
    return int(str_number) % 2 == 0
 
 def is_odd(str_number):
-    return not is_even(str_number)
- 
+   return not is_even(str_number)
+
 def num_pair_have_same_pairity(str_first, str_second):
    if is_even(str_first) and is_even(str_second):
       return True
