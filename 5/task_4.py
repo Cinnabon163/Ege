@@ -1,0 +1,16 @@
+for i in range(1000, 10000):
+    a, b, c, d = map(int, str(i))
+
+    s1 = a + b
+    s2 = b + c
+    s3 = c + d
+
+    sums = [s1, s2, s3]
+    sums.remove(min(sums))
+
+    sums.sort()
+    result = "".join(str(x) for x in sums)
+
+    if result == "613":
+        print(i)
+        break
